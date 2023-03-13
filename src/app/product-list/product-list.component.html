@@ -8,7 +8,8 @@
   </h3>
   <p *ngIf="productas.description">Description: {{ productas.description }}</p>
   <button type="button" (click)="share()">Share</button>
-  <app-product-alerts [product12]="productas"> </app-product-alerts>
+  <app-product-alerts [product12]="productas" (product3)="onNotify()">
+  </app-product-alerts>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
