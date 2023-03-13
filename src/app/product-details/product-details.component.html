@@ -4,4 +4,5 @@
   <h3>{{ productlocal.name }}</h3>
   <h4>{{ productlocal.price | currency }}</h4>
   <p>{{ productlocal.description }}</p>
+  <button type="button" (click)="addToCart(productlocal)">Buy</button>
 </div>
